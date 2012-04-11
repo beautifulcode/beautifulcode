@@ -7,4 +7,19 @@
 //-----------------------------------------
 
 html {}
-body {}
+html *{
+  // Sane Box Model
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {border-top: 5px solid #ccc; padding: 0; margin: 0;}
+#site {width: 600px; padding: 20px; padding-bottom: 100px; margin: 0 auto; border: 1px dashed #ccc; border-top: none; border-bottom: none; box-shadow: 0 0 30px 5px rgba(0,0,0,0.1)}
+
+header{
+  margin: 0;
+  text-align: center;
+}
+
+h1{font-family: 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: 0;}
