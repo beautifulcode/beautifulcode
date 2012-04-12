@@ -22,4 +22,22 @@ header{
   text-align: center;
 }
 
-h1{font-family: 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: 0;}
+// h1{font-family: 'LeagueGothicRegular', Arial, sans-serif;letter-spacing: 0;}
+h1{@extend .font-hammersmith;}
+
+nav{
+  margin: 2em;
+  border-bottom: 1px solid $grey;
+  overflow:hidden;
+  a{
+    width: 20%; 
+    text-align: center; 
+    display: block; 
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $link-color;
+    font-weight: bold;
+    @extend .font-hammersmith;
+  }
+}

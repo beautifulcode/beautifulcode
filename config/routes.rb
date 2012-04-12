@@ -1,4 +1,9 @@
 Beautifulcode::Application.routes.draw do
+  
+  ['about', 'projects', 'tweets', 'photos', 'music' ,'contact'].each { |r|
+      get "/#{r}", :to => "pages#show", :as => r 
+  }
+   
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
